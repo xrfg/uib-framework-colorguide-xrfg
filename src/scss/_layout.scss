@@ -1,6 +1,50 @@
 header {
   height: 20vh;
-  h1 {
-    font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  border-radius: 5px;
+  border: $figBorder;
+  overflow: hidden;
+  margin-bottom: 3rem;
+
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    color: $figCaption;
+
+    span {
+      display: block;
+    }
   }
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-purple {
+  background-color: $purple;
 }
