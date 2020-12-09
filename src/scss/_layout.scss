@@ -80,6 +80,10 @@ header {
     grid-auto-rows: 250px;
     gap: 2rem;
   }
+
+  .gradient {
+    margin-top: 3rem;
+  }
 }
 
 @mixin desktop {
