@@ -5,7 +5,7 @@ $yellow: rgb(255, 244, 51);
 $white: rgb(255, 255, 255);
 $purple: rgb(155, 89, 208);
 
-$blackHex: #000000;
+$blackHex: #0f0f0f;
 $yellowHex: #fff433;
 $whiteHex: #ffffff;
 $purpleHex: #9b59d0;
@@ -16,3 +16,8 @@ $figCaption: rgb(150, 150, 150);
 // border //
 
 $figBorder: 1px solid $figCaption;
+
+// m queries //
+
+$tablet: 768px;
+$desktop: 1024px;

@@ -26,6 +26,7 @@ header {
     justify-content: center;
     padding-left: 1rem;
     color: $figCaption;
+    border-top: $figBorder;
 
     span {
       display: block;
@@ -34,17 +35,51 @@ header {
 }
 
 .bg-black {
-  background-color: $black;
+  background-color: $blackHex;
 }
 
 .bg-yellow {
-  background-color: $yellow;
+  background-color: $yellowHex;
 }
 
 .bg-white {
-  background-color: $white;
+  background-color: $whiteHex;
 }
 
 .bg-purple {
-  background-color: $purple;
+  background-color: $purpleHex;
+}
+
+.gradient {
+  display: flex;
+  div {
+    flex-grow: 1;
+  }
+  div:nth-of-type(1) {
+    filter: brightness(100%);
+  }
+  div:nth-of-type(2) {
+    filter: brightness(185%);
+  }
+  div:nth-of-type(3) {
+    filter: brightness(250%);
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@include tablet {
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@include desktop {
 }
